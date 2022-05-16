@@ -27,8 +27,8 @@ body {
   flex-flow: row nowrap;
   align-items: flex-end;
   justify-content: flex-end;
-  padding-right: 60px;
-  padding-bottom: 60px;
+  padding: 60px;
+  margin: 0 auto;
 }
 
 .slider__nav {
@@ -113,6 +113,24 @@ input:hover {
   transition: 0.2s;
   box-shadow: 0 0 0 8px rgb(192, 212, 153);
   outline: 6px solid rgb(192, 212, 153);
+}
+
+@media (max-width: 320px) {
+  .slider__image {
+    height: 235px;
+  }
+
+  .slider {
+    justify-content: center;
+    padding: 40px;
+    padding-bottom: 165px;
+  }
+
+  .slider__txt {
+    margin-left: 0;
+    margin-bottom: -65px;
+    margin-top: 100px;
+  }
 }
 
 @-webkit-keyframes check {

@@ -115,7 +115,21 @@ input:hover {
   outline: 6px solid rgb(192, 212, 153);
 }
 
-@media (max-width: 470px) {
+input {
+  position: relative;
+}
+
+input::after {
+  content: "";
+  position: absolute;
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  top: -8px;
+  left: -8px;
+}
+
+@media (max-width: 700px) {
   .slider__image {
     height: 235px;
   }
